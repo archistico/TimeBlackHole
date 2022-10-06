@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Time Black Hole</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <h1> </h1>
+    <h3></h3>
+    <header>
+        <div class="titolo">
+            <h1 class="titolo-leggero">Time <span class="titolo-nero">black</span> hole</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Il tempo vicino a una massa</h2>
+            <p class="spiegazione">Il tempo accelera a mano a mano che ci si allontana da un oggetto con grande massa. Per questo in cima a un monte, quando si è più lontani dal centro della terra, gli orologi corrono più velocemente. Il fenomeno è chiamato dilatazione gravitazionale del tempo e si notano maggiormente i suoi effetti vicino alle masse più grandi dell'universo: i buchi neri.</p>
+            <label for="massa_buco_nero">Scegli la massa di un buco nero non rotante</label>
+            <select name="massa_buco_nero" id="massa_buco_nero" onchange="onChangeValue()">
+                <option value="1.00E+11">Phoenix A</option>
+                <option value="6.60E+10">TON 618</option>
+                <option value="4.00E+10">Holmberg 15A</option>
+                <option value="1.00E+9">Cygnus A</option>
+                <option value="2.30E+8">Andromeda Galaxy</option>
+                <option value="1.00E+8" selected>Messier 85</option>
+                <option value="3.00E+7">Messier 82 (Cigar Galaxy)</option>
+                <option value="4.30E+6">Sagittarius A*</option>
+                <option value="9.00E+3">Buco nero di NGC 247</option>
+                <option value="10.4">V Puppis</option>
+            </select>
+
+            <label for="distanza">Distanza dall'orizzonte degli eventi</label>
+            <select name="distanza" id="distanza" onchange="onChangeValue()">
+                <option value="1.00E+14">100 miliardi di km</option>
+                <option value="1.00E+13">10 miliardi di km</option>
+                <option value="1.00E+12">1 miliardo di km</option>
+                <option value="1.00E+11">100 milioni di km</option>
+                <option value="1.00E+10">10 milioni di km</option>
+                <option value="1.00E+9" selected>1 milione di km</option>
+                <option value="1.00E+8">100 mila km</option>
+                <option value="1.00E+7">10 mila km</option>
+                <option value="1.00E+6">1000 km</option>
+                <option value="1.00E+5">100 km</option>
+                <option value="1.00E+4">10 km</option>
+                <option value="1.00E+3">1 km</option>
+            </select>
+
+            <p class="risultati-calcoli">Buco nero in masse solari<br><span id="massaBucoNero" class="grassetto"></span></p>
+            <p class="risultati-calcoli">Raggio orizzonte degli eventi<br><span id="raggioOrizzonteEventi" class="grassetto"></span> m</p>
+            <p class="risultati-calcoli">Rallentamento del tempo<br><span id="percentualeRallentamento" class="grassetto"></span>%</p>
+            <p class="risultati-calcoli">Moltiplicatore del tempo<br><span id="moltiplicatore" class="grassetto"></span>x</p>
+            <p class="spazio-paragrafo">Calcolo della dilatazione temporale</p>
+
+            <div class="risultati">
+                <div class="risultati-unita">
+                    <p>Un'ora attorno al buco nero</p>
+                </div>
+                <div class="risultati-tempo">
+                    <div class="risultati-tempo-blocco">
+                        <p><span id="anni" class="grassetto"></span> anni</p> 
+                        <p><span id="giorni" class="grassetto"></span> giorni</p>
+                        <p><span id="ore" class="grassetto"></span> ore</p>
+                        <p><span id="minuti" class="grassetto"></span> minuti</p>
+                        <p><span id="secondi" class="grassetto"></span> secondi</p>    
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="info">
+            <p class="contatti">info🐌supercat.dev</p>
+            <p class="copyright">2022 © Emilie Rollandin</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
