@@ -91,9 +91,6 @@ function calculate(massa, distanza) {
     html_moltiplicatore.innerHTML = moltiplicatore.toFixed(2)
 
     // converti il moltiplicatore (es. 1h vicino al buco nero 1.23 -> fa un'ora e 13 minuti)
-    // ore =ARROTONDA.DIFETTO.XCL(O15-24*Q15;1)
-    // minuti =ARROTONDA.DIFETTO.XCL((O15-Q15*24-S15)*60;1)
-
     const html_anni = document.getElementById('anni')
     const html_giorni = document.getElementById('giorni')
     const html_ore = document.getElementById('ore')
